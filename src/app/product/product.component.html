@@ -1,0 +1,33 @@
+
+
+<div class="panel">
+        <div class="panel-heading"><b>{{title}}</b></div>
+        <div class="panel-body">
+        <div class="table-responsive">
+         
+        <table class="table table-bordered">
+            <thead>
+               
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pr of products">
+                    <td>{{pr.id}}</td>
+                    <td>{{pr.name}}</td>
+                    <td>{{pr.quantity}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <button type="button" (click)="addPrev()">&lt;&lt;</button>
+        <button type="button" (click)="addList()">GET THE DATA</button>
+        <button type="button" (click)="addNext()">&gt;&gt;</button>
+        
+        </div>
+        </div>
